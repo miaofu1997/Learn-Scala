@@ -19,4 +19,6 @@ abstract class Animal {
     println("呼吸氧气")
   }
 
+
+
 }

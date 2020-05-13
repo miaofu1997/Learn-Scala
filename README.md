@@ -1,2 +1,3 @@
 # Learn-Scala
-for personal study use only
+
+This project is for personal study documenting use only.

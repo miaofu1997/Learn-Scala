@@ -25,7 +25,14 @@ object Dog {
       }
     }
     d.fight()
-    d.fly()
+    d.fly() //只有这个d里面 有fly方法
+
+  }
+}
+
+
+class MyDog extends Dog with Flyable {
+  override def fly(): Unit = {
 
   }
 }

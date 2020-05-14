@@ -5,9 +5,8 @@ package cosette.day02
  *
  * @Auther: Cosette
  * @Date: 2020/5/13 09:31
- * @Description:
+ * @Description: 主构造器与辅助构造器
  */
-//主构造器
 class People(val name: String) {
 
   var age: Int = _ // 不能用val 否则不能赋值

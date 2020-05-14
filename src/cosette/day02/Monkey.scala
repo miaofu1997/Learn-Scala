@@ -5,7 +5,7 @@ package cosette.day02
  *
  * @Auther: Cosette
  * @Date: 2020/5/13 15:46
- * @Description:
+ * @Description: 继承
  */
 class Monkey extends Animal with Flyable with Fightable {
 

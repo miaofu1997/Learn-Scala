@@ -1,5 +1,7 @@
 package cosette.day02
 
+import scala.collection.MapView
+
 /**
  * cosette.day02
  *
@@ -32,6 +34,14 @@ object WordCount {
     val result: List[(String, Int)] = listWordCounts.sortBy(tp => -tp._2)
 
     println(result)
+
+
+    //或者不需要和1组合起来 直接group 再和key组合起来
+    val grouped2: Map[String, List[String]] = words.groupBy(w => w)
+
+    val values = grouped2.mapValues(x => x.size).toList.sortBy(tp => tp._2)
+
+    println(values)
 
   }
 

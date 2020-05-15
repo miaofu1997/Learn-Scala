@@ -1,7 +1,5 @@
 package cosette.day02
 
-import scala.collection.MapView
-
 /**
  * cosette.day02
  *
@@ -42,6 +40,7 @@ object WordCount {
     val values = grouped2.mapValues(x => x.size).toList.sortBy(tp => tp._2)
 
     println(values)
+
 
   }
 

@@ -55,7 +55,7 @@ object ListTest2 {
       val lst12 = lst0.foldLeft(100)((x, y) => x + y)
 
 
-      //聚合
+      //聚合求和
       val arr = List(List(1, 2, 3), List(3, 4, 5), List(2), List(0))
       val result = arr.aggregate(0)(_ + _.sum, _ + _)
 

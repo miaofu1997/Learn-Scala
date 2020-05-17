@@ -13,6 +13,8 @@ object ListTest {
 
     var arr = Array(1,7,3,6,2,8,5,4,9)
 
+    arr.map(x => x * x)
+
     val max = arr.max
     println(max)
 

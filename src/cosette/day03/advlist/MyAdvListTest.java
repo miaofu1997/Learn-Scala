@@ -35,7 +35,6 @@ public class MyAdvListTest {
 
         MyAdvList<Integer> nums = new MyAdvList<>();
         nums.add(1);
-        nums.add(1);
         nums.add(3);
         nums.add(2);
         nums.add(4);
@@ -92,6 +91,23 @@ public class MyAdvListTest {
         for (Double result1 : resultList1){
             System.out.println(result1);
         }
+
+        System.out.println("//////////////////////////");
+
+        Integer r = nums.reduce(new MyFunction2<Integer, Integer, Integer>() {
+            @Override
+            public Integer apply(Integer i, Integer j) {
+                return i * j;
+            }
+        });
+
+        System.out.println(r);
+
+        System.out.println("//////////////////////////");
+
+        String w = words.reduce((a, b) -> a + b);
+
+        System.out.println(w);
 
     }
 }

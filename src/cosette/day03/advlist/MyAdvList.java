@@ -43,4 +43,24 @@ public class MyAdvList<T> extends ArrayList<T> implements MyTraversableLike<T> {
         }
         return nList;
     }
+
+    public T reduce(MyFunction2<T, T, T> func) {
+        //定义一个sum
+        T sum = null;
+        //定义一个boolean的类型
+        boolean isFirst = true;
+        //取出原来List中的元素
+        for (T t: this) {
+            if(isFirst){
+                sum = t;
+                isFirst = false;
+            }
+            else {
+                //应用传入的函数进行运算
+                sum = func.apply(sum, t);
+            }
+        }
+        return sum;
+
+    }
 }

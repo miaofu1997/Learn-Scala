@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @Auther: Cosette
  * @Date: 2020/5/17 20:23
- * @Description:
+ * @Description: 定义共有的方法
  */
 // MyTraversableLike<T>是泛型类, 以后T类型在方法中就可以使用了
 public interface MyTraversableLike<T> {

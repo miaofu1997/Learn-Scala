@@ -28,7 +28,8 @@ object Pair1 {
   def main(args: Array[String]): Unit = {
 
     //装的是Scala的Int
-    //视图界定：可以隐式转换，将Int 转成 Integer
+    //视图界定：可以隐式转换，将Int转成Integer
+    //默认的隐式转换在Predef里面353行int2Integer方法
     //implicit def int2Integer(x: Int) = java.lang.Integer.valueOf(x)
     val pair = new Pair1[Int]
 

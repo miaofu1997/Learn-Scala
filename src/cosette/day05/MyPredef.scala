@@ -15,4 +15,10 @@ object MyPredef {
     }
   }
 
+  implicit object OrderingMan extends Ordering[Man] {
+    override def compare(x: Man, y: Man): Int = {
+      x.age - y.age
+    }
+  }
+
 }

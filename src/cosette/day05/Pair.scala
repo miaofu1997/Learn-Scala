@@ -25,7 +25,7 @@ class Pair[T <: Comparable[T]] {
 object Pair {
   def main(args: Array[String]): Unit = {
 
-    //装的是Scala的Int, 没有实现Comparable接口
+    //Scala的Int, 没有实现Comparable接口
     //val pair = new Pair[Int]
 
     //Java的Integer则实现了Comparable接口

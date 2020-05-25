@@ -12,6 +12,7 @@ package cosette.day05
 //class Boy(val name: String, var fv: Double) extends Comparable[Boy]{
 
 class Boy(val name: String, var fv: Double){
+
   override def toString: String = s"Boy($name,$fv)"
 
 //  override def compareTo(o: Boy): Int = {
